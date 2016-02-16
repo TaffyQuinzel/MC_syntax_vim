@@ -1,7 +1,7 @@
 # vim-MetaCasanova
 Syntax hightlighting for the [Meta-Casanova programming language](https://github.com/vs-team/metacompiler "MC repository").
 
-## installation
+## Installation
 Download the repo and put the source in your `.vim/` directory or use your preferred package manager.
 
 ### [vim-plug](https://github.com/junegunn/vim-plughttps://github.com/junegunn/vim-plug)
