@@ -8,12 +8,12 @@ if exists("b:current_syntax")
 endif
 
 " Keywords
-syn keyword mcBasicKeywords Data Func TypeFunc TypeAlias Module inherit import --
+syn keyword mcBasicKeywords Data Func TypeFunc TypeAlias Module inherit import
 
 " specal char
 syn match mcBar '--\+'
 " arrows
-syn match mcPriorityArrow '#>'
+syn match mcPriorityArrow '#>\( \d\+\)\=\( [RL]\)\='
 syn match mcTypeArrow '->'
 syn match mcKindArrow '=>'
 
@@ -23,8 +23,7 @@ syn region mcComment start="\$\$" end="\n"
 syn region mcString start='"' end='"'
 
 " Integer with - + or nothing in front
-syn match mcNumber '\d\+'
-syn match mcNumber '[-+]\d\+'
+syn match mcNumber '\([-+]\)\=\d\+'
 " Floating point number with decimal no E or e
 syn match mcNumber '[-+]\d\+\.\d*'
 
