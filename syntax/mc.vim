@@ -17,6 +17,7 @@ syn match mcBar '--\+'
 syn match mcPriorityArrow '#>\( \d\+\)\=\( [RL]\)\='
 syn match mcTypeArrow '->'
 syn match mcKindArrow '=>'
+syn match mcParentheses '[()]'
 
 " type variables
 syn match mcTypeVariables "'\w\+"
@@ -43,4 +44,5 @@ hi def link mcBar            Special
 hi def link mcPriorityArrow  Special
 hi def link mcKindArrow      Type
 hi def link mcTypeArrow      Type
-hi def link mcTypeVariables  Type
+hi def link mcParentheses    Type
+hi def link mcTypeVariables  Identifier
