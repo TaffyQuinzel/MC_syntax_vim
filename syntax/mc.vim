@@ -8,7 +8,8 @@ if exists("b:current_syntax")
 endif
 
 " Keywords
-syn keyword mcBasicKeywords Data Func TypeFunc TypeAlias Module inherit import
+syn keyword mcBasicKeywords Data Func ArrowFunc TypeFunc TypeAlias Module
+syn keyword mcPreProcs inherit import
 
 " specal char
 syn match mcBar '--\+'
@@ -32,6 +33,7 @@ let b:current_syntax = "mc"
 
 hi def link mcComment        Comment
 hi def link mcBasicKeywords  Keyword
+hi def link mcPreProcs       PreProc
 hi def link mcString         Constant
 hi def link mcNumber         Constant
 hi def link mcBar            Special
