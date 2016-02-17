@@ -18,6 +18,9 @@ syn match mcPriorityArrow '#>\( \d\+\)\=\( [RL]\)\='
 syn match mcTypeArrow '->'
 syn match mcKindArrow '=>'
 
+" type variables
+syn match mcTypeVariables "'\w\+"
+
 " Regions
 syn region mcComment start="\$\*" end="\*\$"
 syn region mcComment start="\$\$" end="\n"
@@ -40,3 +43,4 @@ hi def link mcBar            Special
 hi def link mcPriorityArrow  Special
 hi def link mcKindArrow      Type
 hi def link mcTypeArrow      Type
+hi def link mcTypeVariables  Type
