@@ -9,7 +9,7 @@ endif
 
 " Keywords
 syn keyword mcBasicKeywords Data Func ArrowFunc TypeFunc TypeAlias Module
-syn keyword mcPreProcs inherit import
+syn keyword mcPreProcs inherit import builtin
 
 " specal char
 syn match mcBar '--\+'
