@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language: Meta-Casanova
 " Maintainer: Louis van der Burg
-" Latest Revision: 16 februari 2016
+" Latest Revision: 3 march 2016
 
 if exists("b:current_syntax")
   finish
@@ -32,6 +32,8 @@ syn match mcNumber '\([-+]\)\=\d\+'
 " Floating point number with decimal no E or e
 syn match mcNumber '[-+]\d\+\.\d*'
 
+" member access operator
+syn match mcMemAccOperator '\w^\w'
 
 let b:current_syntax = "mc"
 
@@ -42,6 +44,7 @@ hi def link mcString         Constant
 hi def link mcNumber         Constant
 hi def link mcBar            Special
 hi def link mcPriorityArrow  Special
+hi def link mcMemAccOperator Special
 hi def link mcKindArrow      Type
 hi def link mcTypeArrow      Type
 hi def link mcParentheses    Type
