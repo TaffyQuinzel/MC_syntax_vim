@@ -33,7 +33,7 @@ syn match mcNumber '\([-+]\)\=\d\+'
 syn match mcNumber '[-+]\d\+\.\d*'
 
 " member access operator
-syn match mcMemAccOperator '^'
+syn match mcMemAccOperator '\^'
 
 let b:current_syntax = "mc"
 
